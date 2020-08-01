@@ -16,17 +16,15 @@ public class CoffeeCalculations extends MainCoffeeSales{
 
     //A method named getSaleTax() that returns the tax on the transaction.
     public double getSaleTax(){
-        CoffeeCalculations sale = new CoffeeCalculations();
         double salesTax;
-        salesTax = (TAX_RATE * sale.getSale());
+        salesTax = (TAX_RATE * this.getSale());
         return salesTax;
     }
 
     //A method named getTotalPrice() that returns the total sale price.
     public double getTotalPrice(){
-        CoffeeCalculations sale = new CoffeeCalculations();
         double totalPrice;
-        totalPrice = (sale.getSaleTax() + sale.getSale());
+        totalPrice = (this.getSaleTax() + this.getSale());
         return totalPrice;
     }
 
